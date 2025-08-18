@@ -92,14 +92,15 @@ void posicionarNavio(int tabuleiro[LINHAS][COLUNAS], int l_inicio, int c_inicio,
 int main() {
     int tabuleiro[LINHAS][COLUNAS] = {0};
 
-    // Coordenadas corrigidas para evitar sobreposição
-    posicionarNavio(tabuleiro, 4, 2, 4, 4); // Navio horizontal (3)
-    posicionarNavio(tabuleiro, 6, 8, 8, 8); // Navio vertical (3)
-    posicionarNavio(tabuleiro, 1, 1, 3, 3); // Navio diagonal crescente (3)
-    posicionarNavio(tabuleiro, 5, 7, 7, 5); // Navio diagonal decrescente (3)
+
+    posicionarNavio(tabuleiro, 4, 2, 4, 4); 
+    posicionarNavio(tabuleiro, 6, 8, 8, 8); 
+    posicionarNavio(tabuleiro, 1, 1, 3, 3); 
+    posicionarNavio(tabuleiro, 5, 7, 7, 5); 
     
     // Exibe o tabuleiro
     exibirTabuleiro(tabuleiro);
 
     return 0;
+
 }
